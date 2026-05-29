@@ -50,6 +50,18 @@ Instead of allowing external classes to freely create objects, the class itself 
 * Providing controlled access
 
 
+```text
++--------------------------------------------------+
+|                     Logger                       |
++--------------------------------------------------+
+| - instance : Logger                              |
++--------------------------------------------------+
+| - Logger()                                       |
+| + getInstance() : Logger                         |
+| + log(message : String) : void                   |
++--------------------------------------------------+
+```
+
 # Steps To Implement Singleton
 
 ## 1. Make Constructor Private
@@ -318,3 +330,4 @@ A strong interview explanation should progress like:
 # Interview One-Liner
 
 Singleton ensures that only one instance of a class exists and provides a global access point to that instance.
+
